@@ -1,0 +1,14 @@
+import cv2
+import numpy as np
+
+pic=np.ones((600, 600, 3))
+
+a1=cv2.circle(pic, center=(300, 300), radius=150, color=(0, 100, 200), thickness=-1)
+a2=cv2.circle(pic, center=(260, 250), radius=8, color=(0, 0, 0), thickness= -1)
+a3=cv2.circle(pic, center=(346, 250), radius=8, color=(0, 0, 0), thickness= -10)
+a4=cv2.ellipse(pic, center=(300, 300), axes=(50,50), angle=180, startAngle=180, endAngle=360, color=(0,0,255), thickness=5)
+
+
+cv2.imshow("task4.1", pic)
+cv2.waitKey()
+cv2.destroyAllWindows()
