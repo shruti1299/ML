@@ -1,0 +1,18 @@
+import cv2
+
+
+pic1=cv2.resize(cv2.imread('a2.jpg.jpg'),(500,500))
+pic2=cv2.resize(cv2.imread('gall.jpeg'),(500,500))
+
+cv2.imshow("pic1",pic1)
+cv2.waitKey()
+cv2.destroyAllWindows()
+
+cv2.imshow("pic2",pic2)
+cv2.waitKey()
+cv2.destroyAllWindows()
+
+pic1[10:300,150:350]=pic2[10:300,150:350]
+cv2.imshow("pic1",pic1)
+cv2.waitKey()
+cv2.destroyAllWindows()
