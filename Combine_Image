@@ -1,0 +1,20 @@
+import cv2
+import numpy as np
+
+pic1=cv2.resize(cv2.imread('tiger.jpg'),(500,500))
+cv2.imshow("pic1",pic1)
+cv2.waitKey()
+cv2.destroyAllWindows()
+
+
+pic2=cv2.resize(cv2.imread('color.jpg'),(500,500))
+cv2.imshow("pic2",pic2)
+cv2.waitKey()
+cv2.destroyAllWindows()
+
+
+a = np.hstack((pic1,pic2))
+
+cv2.imshow('hi',a)
+cv2.waitKey()
+cv2.destroyAllWindows()
